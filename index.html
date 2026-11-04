@@ -51,6 +51,8 @@ body {
     text-align: center;
 }
 
+/* Header */
+
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -85,12 +87,15 @@ body {
     white-space: nowrap;
 }
 
+/* Smaller Logo */
+
 .profile {
     width: 100%;
+    max-width: 260px;
+    margin: 0 auto 22px;
     border: 1px solid #173522;
-    border-radius: 22px;
+    border-radius: 18px;
     overflow: hidden;
-    margin-bottom: 25px;
     background: #000;
     box-shadow: 0 12px 35px #000;
 }
@@ -98,9 +103,11 @@ body {
 .profile img {
     width: 100%;
     display: block;
-    max-height: 360px;
+    height: 220px;
     object-fit: cover;
 }
+
+/* Main Content */
 
 .tag {
     font-size: 10px;
@@ -127,6 +134,8 @@ h1 span {
     line-height: 1.7;
     margin-bottom: 25px;
 }
+
+/* Telegram Button */
 
 .telegram-btn {
     display: flex;
@@ -156,6 +165,8 @@ h1 span {
     flex-shrink: 0;
 }
 
+/* Features */
+
 .features {
     display: flex;
     justify-content: space-around;
@@ -178,6 +189,8 @@ h1 span {
     font-size: 12px;
 }
 
+/* Disclaimer */
+
 .disclaimer {
     background: #0b100d;
     border: 1px solid #202c23;
@@ -194,6 +207,8 @@ h1 span {
     color: #facc15;
 }
 
+/* Footer */
+
 .footer {
     border-top: 1px solid #1b2920;
     padding-top: 18px;
@@ -209,6 +224,7 @@ h1 span {
 }
 
 /* Agency Credit */
+
 .agency-credit {
     margin-top: 12px;
     font-size: 12px;
@@ -233,6 +249,7 @@ h1 span {
 
 <div class="container">
 
+    <!-- Header -->
     <div class="topbar">
         <div class="brand">
             <span class="dot"></span>
@@ -244,11 +261,13 @@ h1 span {
         </div>
     </div>
 
+    <!-- Smaller Logo -->
     <div class="profile">
         <img src="logo.png"
              alt="Gautam Kumar Jha Official Logo">
     </div>
 
+    <!-- Main Content -->
     <div class="tag">OFFICIAL COMMUNITY</div>
 
     <h1>
@@ -262,6 +281,7 @@ h1 span {
         content, market insights and learning resources.
     </p>
 
+    <!-- Telegram Button -->
     <a href="https://t.me/+JHOr_NAdtUw1OTNl"
        class="telegram-btn"
        onclick="trackSubscribe(event)">
@@ -279,6 +299,7 @@ h1 span {
         JOIN TELEGRAM COMMUNITY ➜
     </a>
 
+    <!-- Features -->
     <div class="features">
 
         <div class="feature">
@@ -298,6 +319,7 @@ h1 span {
 
     </div>
 
+    <!-- Disclaimer -->
     <div class="disclaimer">
         <strong>⚠ IMPORTANT DISCLAIMER</strong><br>
 
@@ -309,6 +331,7 @@ h1 span {
         qualified financial advisor before investing.
     </div>
 
+    <!-- Footer -->
     <div class="footer">
         © 2026 GAUTAM KUMAR JHA. All Rights Reserved.<br>
         Official Stock Learners Community<br>
