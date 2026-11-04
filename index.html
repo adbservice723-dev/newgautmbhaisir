@@ -5,9 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Stock Learners | Official Community</title>
+<title>GAUTAM KUMAR JHA (OFFICIAL) 🔵</title>
 
-<meta name="description" content="Join our Stock Learners Telegram community for stock market educational content.">
+<meta name="description" content="Join Gautam Kumar Jha Official Telegram community for stock market educational content.">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -58,12 +58,14 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 22px;
+    gap: 8px;
 }
 
 .brand {
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
+    text-align: left;
 }
 
 .dot {
@@ -82,9 +84,10 @@ body {
     border: 1px solid #225b38;
     padding: 7px 12px;
     border-radius: 30px;
+    white-space: nowrap;
 }
 
-/* Profile Image */
+/* Logo Image */
 
 .profile {
     width: 100%;
@@ -103,7 +106,7 @@ body {
     object-fit: cover;
 }
 
-/* Content */
+/* Main Content */
 
 .tag {
     font-size: 10px;
@@ -143,7 +146,7 @@ h1 span {
     background: linear-gradient(135deg,#86efac,#22c55e);
     color: #001b09;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 900;
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(34,197,94,.3);
@@ -158,9 +161,10 @@ h1 span {
     width: 23px;
     height: 23px;
     fill: #001b09;
+    flex-shrink: 0;
 }
 
-/* Trust Section */
+/* Features */
 
 .features {
     display: flex;
@@ -228,32 +232,32 @@ h1 span {
     <div class="topbar">
         <div class="brand">
             <span class="dot"></span>
-            STOCK LEARNERS
+            GAUTAM KUMAR JHA 🔵
         </div>
 
         <div class="badge">
-            ● OFFICIAL COMMUNITY
+            OFFICIAL
         </div>
     </div>
 
-    <!-- Profile Image -->
+    <!-- Logo / Profile Image -->
     <div class="profile">
         <img src="logo.png"
-             alt="Stock Learners Official">
+             alt="Gautam Kumar Jha Official Logo">
     </div>
 
     <!-- Main Content -->
-    <div class="tag">WELCOME TO OUR COMMUNITY</div>
+    <div class="tag">OFFICIAL COMMUNITY</div>
 
     <h1>
         Learn The Market.
-        <span>Grow Your Knowledge.</span>
+        <span>Build Your Edge.</span>
     </h1>
 
     <p class="description">
-        Join our Stock Learners Telegram community
-        and explore stock market educational content,
-        market insights and learning resources.
+        Join Gautam Kumar Jha's Stock Learners community
+        and stay connected with stock market educational
+        content, market insights and learning resources.
     </p>
 
     <!-- Telegram Button -->
@@ -297,6 +301,7 @@ h1 span {
     <!-- Disclaimer -->
     <div class="disclaimer">
         <strong>⚠ IMPORTANT DISCLAIMER</strong><br>
+
         This community is intended for educational and
         informational purposes only. We do not provide
         guaranteed returns or personalized investment advice.
@@ -307,15 +312,14 @@ h1 span {
 
     <!-- Footer -->
     <div class="footer">
-        © 2026 Stock Learners. All Rights Reserved.<br>
-        Managed by <a href="#">Your Brand Name</a>
-        <br>
-        Educational Community • Market Risks Apply
+        © 2026 GAUTAM KUMAR JHA. All Rights Reserved.<br>
+        Official Stock Learners Community<br>
+        Educational Content • Market Risks Apply
     </div>
 
 </div>
 
-<!-- Subscribe Event Tracking -->
+<!-- Meta Subscribe Event Tracking -->
 <script>
 function trackSubscribe(event) {
 
@@ -327,28 +331,22 @@ function trackSubscribe(event) {
 
     function redirectToTelegram() {
         if (redirected) return;
+
         redirected = true;
         window.location.href = telegramURL;
     }
 
-    // Fire Meta Subscribe Event
     if (typeof fbq === 'function') {
 
-        fbq(
-            'track',
-            'Subscribe',
-            {
-                value: 1.00,
-                currency: 'INR'
-            }
-        );
+        fbq('track', 'Subscribe', {
+            value: 1.00,
+            currency: 'INR'
+        });
 
-        // Give Pixel time to send the event
         setTimeout(redirectToTelegram, 300);
 
     } else {
 
-        // Redirect even if Pixel is unavailable
         redirectToTelegram();
 
     }
